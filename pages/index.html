@@ -1,199 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap cdn (for styling  etc......) -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <!-- script for modal open  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- use this below bootstrap version with modal open  -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- import css file  for styling  -->
-    <link rel="stylesheet" href="../css/style.css" />
-    <!-- import jquery file for using jquery  -->
-    <script src="../jQuery/index.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script> -->
+  <!--  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!--  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Document</title>
+</head>
 
-    <!-- jquery cdn uncompressed   -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.js"
-      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-      crossorigin="anonymous"
-    ></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- navbar section  -->
-    <nav class="navbar navbar-expand-sm bg-light">
-      <div class="container-fluid">
-        <span class="navbar-brand m-0">
-          <img
-            src="../assets/Main-logo.webp"
-            height="50"
-            width="50"
-            alt="Logo"
-          />
-        </span>
-      </div>
+<body>
+  <!-- navbar section  -->
+  <nav class="navbar navbar-expand-sm bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand m-0">
+        <img src="../assets/Main-logo.webp" height="50" width="50" alt="Logo" />
+      </span>
+    </div>
 
-      <ul class="navbar-nav">
-        <li class="nav-item m-3">
-          <a
-            class="nav-link"
-            href="#modal1"
-            data-toggle="modal"
-            data-target="#modal1"
-            >Login
+    <ul class="navbar-nav">
+      <li class="nav-item m-3">
+        <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Login
+        </a>
+      </li>
+      <li class="nav-item m-3">
+        <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#myModal2">SignUp
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+
+  <!-- login modal  -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Login Modal</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Type your password" minlength="3"
+              required />
+            <br />
+            <br />
+            <label for="email">E-Mail</label>
+            <input id="email" type="email" name="email" placeholder="Type your Email" required class="email-input" />
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <a href="../pages/homePage.html">
+            <button class="btn btn-primary">Submit</button>
           </a>
-        </li>
-        <li class="nav-item m-3">
-          <a
-            class="nav-link"
-            href="#modal2"
-            data-toggle="modal"
-            data-target="#modal2"
-            >SignUp
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Register modal  -->
+  <div class="modal" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Login Modal</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="">Firstname</label>
+            <input type="text" placeholder="firstname" />
+            <br /><br />
+            <label for="">LastName</label>
+            <input type="text" placeholder="Type your lastname" />
+            <br /><br />
+            <label for="">E-mail</label>
+            <input type="email" placeholder="Type your email" class="major-field" />
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <a href="../pages/homePage.html">
+            <button class="btn btn-primary">Submit</button>
+
           </a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Modal  for Login -->
-    <div class="modal fade" id="modal1" role="dialog">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">
-              &times;
-            </button>
-            <h4 class="modal-title">Login Modal</h4>
-          </div>
-          <div class="modal-body">
-            <form>
-              <label for="password">Password</label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                placeholder="Type your password"
-                minlength="3"
-                required
-              />
-              <br />
-              <br />
-              <label for="email">E-Mail</label>
-              <input
-                id="email"
-                type="email"
-                name="email"
-                placeholder="Type your Email"
-                required
-                class="email-input"
-              />
-            </form>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">
-                Close
-              </button>
-              <a href="homePage.html">
-                <button class="btn btn-primary">Submit</button>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- modal  for Regitster  -->
 
-    <div class="modal fade" id="modal2" role="dialog">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">
-              &times;
-            </button>
-            <h4 class="modal-title">Register Modal</h4>
-          </div>
-          <div class="modal-body">
-            <!-- <p>This is a small modal.</p> -->
-            <form>
-              <label for="">Firstname</label>
-              <input type="text" placeholder="firstname" />
-              <br /><br />
-              <label for="">LastName</label>
-              <input type="text" placeholder="Type your lastname" />
-              <br /><br />
-              <label for="">E-mail</label>
-              <input
-                type="email"
-                placeholder="Type your email"
-                class="major-field"
-              />
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">
-              Close
-            </button>
-            <a href="homePage.html">
-              <button class="btn btn-success">Regitster</button>
-            </a>
-          </div>
-        </div>
+
+
+  <!-- // modal -->
+  <section id="about">
+    <p class="small">About Us</p>
+
+    <div class="about-wrapper containers">
+      <div class="about-text">
+        <h2>About iSOFT University:</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+          quisquam asperiores unde natus repudiandae. Quo ex eos cupiditate
+          asperiores accusamus aliquid, in modi. Iste pariatur culpa provident
+          possimus. Debitis exercitationem inventore ullam a consectetur natus
+          qui eos quod odio voluptas.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="../assets/section-first-image.jpg" alt="About us" />
       </div>
     </div>
-
-    <!-- // modal -->
-    <section id="about">
-      <p class="small">About Us</p>
-
-      <div class="about-wrapper containers">
-        <div class="about-text">
-          <h2>About iSOFT University:</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-            quisquam asperiores unde natus repudiandae. Quo ex eos cupiditate
-            asperiores accusamus aliquid, in modi. Iste pariatur culpa provident
-            possimus. Debitis exercitationem inventore ullam a consectetur natus
-            qui eos quod odio voluptas.
-          </p>
-        </div>
-        <div class="about-img">
-          <img src="../assets/section-first-image.jpg" alt="About us" />
-        </div>
+  </section>
+  <br />
+  <div class="empty-section">
+    <!-- <p>empty space</p> -->
+  </div>
+  <section id="about">
+    <p class="small">About Us</p>
+    <div class="about-wrapper containers">
+      <div class="about-img">
+        <img src="../assets/section-second-image.jpg" alt="About us" />
       </div>
-    </section>
-    <br />
-    <div class="empty-section">
-      <!-- <p>empty space</p> -->
+      <div class="about-text">
+        <h2>We've been making Interactive websites for last 10 years</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+          quisquam asperiores unde natus repudiandae. Quo ex eos cupiditate
+          asperiores accusamus aliquid, in modi. Iste pariatur culpa provident
+          possimus. Debitis exercitationem inventore ullam a consectetur natus
+          qui eos quod odio voluptas.
+        </p>
+      </div>
     </div>
-    <section id="about">
-      <p class="small">About Us</p>
-      <div class="about-wrapper containers">
-        <div class="about-img">
-          <img src="../assets/section-second-image.jpg" alt="About us" />
-        </div>
-        <div class="about-text">
-          <h2>We've been making Interactive websites for last 10 years</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-            quisquam asperiores unde natus repudiandae. Quo ex eos cupiditate
-            asperiores accusamus aliquid, in modi. Iste pariatur culpa provident
-            possimus. Debitis exercitationem inventore ullam a consectetur natus
-            qui eos quod odio voluptas.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- footer section  -->
-    <footer id="footer">
-      <h2>Restraunt Website &copy; all rights reserved</h2>
-    </footer>
-  </body>
+  </section>
+  <!-- footer section  -->
+  <footer id="footer">
+    <h2>Restraunt Website &copy; all rights reserved</h2>
+  </footer>
+</body>
+
 </html>
