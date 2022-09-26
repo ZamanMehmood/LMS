@@ -14,6 +14,7 @@
     integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
     crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
   <!-- jQuery CDN - Slim version (=without AJAX) -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -90,11 +91,12 @@
         </li>
       </ul>
     </nav>
+
     <!-- Page Content  -->
     <div id="content">
       <nav class="navbar navbar-expand">
         <div class="container-fluid ">
-          <button type="button" id="sidebarCollapse" class="btn text-light">
+          <button type="button " id="sidebarCollapse" class="btn text-light ">
             <i class="fas fa-align-left text-light"></i>
             <span>Toggle Sidebar</span>
           </button>
@@ -102,17 +104,17 @@
             <!--  -->
             <ul class="navbar-nav ms-auto me-5 pe-5">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggles " href="#" id="navbarDropdownMenuLink" role="button"
-                  data-toggle="dropdown" aria-expanded="false">
-                  <img class="profile-image" src="../assets/6699392491598811070-128.png" height="40" width="40"
-                    alt="Portrait of a Woman" loading="lazy" />
+                <a class="nav-link dropdown-toggles " href="#" id="navbarDropdownMenuLink"
+                  role="button" data-toggle="dropdown" aria-expanded="false">
+                  <img class="profile-image" src="../assets/6699392491598811070-128.png" height="40" width="40" alt="Portrait of a Woman"
+                    loading="lazy" />
                 </a>
-                <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink" >
                   <li>
                     <a class="dropdown-item" href="../pages/myProfile.html">My profile</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="../pages/settings.html">Settings</a>
+                    <a class="dropdown-item" href="../pages/settings.html">Change Password</a>
                   </li>
                   <hr class="dropdown-divider" />
                   <li>
@@ -123,32 +125,68 @@
           </div>
         </div>
       </nav>
-      <div class="p-5">
-        <h2>This is the first Heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est
-          laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est
-          laborum.</p>
-        <div class="line"></div>
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est
-          laborum.</p>
+      <div class="p-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+                    <h2 class="h3 mb-4 page-title">Change your password</h2>
+                    <div class="my-4">
+                        <!-- <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Profile</a>
+                            </li>
+                            <li class="nav-item ps-2">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Profile</a>
+                            </li>
+                            <li class="nav-item ps-2">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Profile</a>
+                            </li>
+                            <li class="nav-item ps-2">
+                                <a class="nav-link active text-danger"  href="../pages/index.html" role="tab" aria-controls="home" aria-selected="false">Logout</a>
+                            </li>
+                        </ul> -->
+                        <form>
+                        
+                            <hr class="my-4" />
+ 
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="inputPassword4">Old Password</label>
+                                        <input type="password" class="form-control" id="inputPassword5" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword5">New Password</label>
+                                        <input type="password" class="form-control" id="inputPassword5" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword6">Confirm Password</label>
+                                        <input type="password" class="form-control" id="inputPassword6" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mb-2">Password requirements</p>
+                                    <p class="small text-muted mb-2">To create a new password, you have to meet all of the following requirements:</p>
+                                    <ul class="small text-muted pl-4 mb-0">
+                                        <li>Minimum 8 character</li>
+                                        <li>At least one special character</li>
+                                        <li>At least one number</li>
+                                        <li>Can not be the same as a previous password</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save Change</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
       </div>
+
+    </div>
+      </div>
+
     </div>
   </div>
 </body>
