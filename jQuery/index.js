@@ -4,15 +4,15 @@ $(document).ready(function () {
   });
 
   $("#voucherButton1").click(function(){
-    $(".bimage1").toggle(2000);
+    $(".bimage1").toggle(1000);
   });
 
   $("#voucherButton2").click(function(){
-    $(".bimage2").toggle(2000);
+    $(".bimage2").toggle(1000);
   });
 
 
   $("#voucherButton3").click(function(){
-    $(".bimage3").toggle(2000);
+    $(".bimage3").toggle(1000);
   });
 });
