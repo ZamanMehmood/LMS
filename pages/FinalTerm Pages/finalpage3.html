@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <html>
-
 <head>
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -27,7 +26,8 @@
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="/css/style.css">
     <script src="../jQuery/index.js"></script>
     <title>LMS</title>
 </head>
@@ -37,27 +37,27 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <!-- <img src="/assets/android-chrome-192x192.png" alt="imag" class="img-fluid"> -->
-            <img class="img-fluid" src="../assets/android-chrome-192x192.png" alt="image">
+            <img class="img-fluid" src="/assets/android-chrome-192x192.png" alt="image">
             <div class="sidebar-header">
                 <h4>Code Academy</h4>
             </div>
             <ul class="list-unstyled components">
                 <p class="text-abc text-center">Welcome</p>
                 <li>
-                    <a href="../pages/attendence.html">Attendance</a>
+                    <a href="/pages/attendence.html">Attendance</a>
                 </li>
                 <li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
                         class="dropdown-toggle">Courses</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="../pages/CurrentCourse.html">Current Courses</a>
+                            <a href="../CurrentCourse.html">Current Courses</a>
                         </li>
                         <li>
-                            <a href="../pages/AddRemove.html">Add/Remove</a>
+                            <a href="../AddRemove.html">Add/Remove</a>
                         </li>
                         <li>
-                            <a href="../pages/RoadMap.html">Road Map</a>
+                            <a href="../RoadMap.html">Road Map</a>
                         </li>
                     </ul>
                 </li>
@@ -66,13 +66,13 @@
                         class="dropdown-toggle">Exams</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="../pages/DateSheet.html">Date Sheet</a>
+                            <a href="../DateSheet.html">Date Sheet</a>
                         </li>
                         <li>
-                            <a href="../pages/MidTerm.html">Mid Term</a>
+                            <a href="../MidTerm.html">Mid Term</a>
                         </li>
                         <li>
-                            <a href="../pages/FinalTerm.html" class="active">Final Term</a>
+                            <a href="../FinalTerm.html" class="active">Final Term</a>
                         </li>
                     </ul>
                 </li>
@@ -80,13 +80,13 @@
                     <a href="#feemenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Fee</a>
                     <ul class="collapse list-unstyled" id="feemenu">
                         <li>
-                            <a href="../pages/Voucher.html">Voucher</a>
+                            <a href="../Voucher.html">Voucher</a>
                         </li>
                         <li>
-                            <a href="../pages/Installments.html">Installments Option</a>
+                            <a href="../Installments.html">Installments Option</a>
                         </li>
                         <li>
-                            <a href="../pages/Loan.html">Student Loan</a>
+                            <a href="../Loan.html">Student Loan</a>
                         </li>
                     </ul>
                 </li>
@@ -106,19 +106,19 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggles " href="#" id="navbarDropdownMenuLink" role="button"
                                     data-toggle="dropdown" aria-expanded="false">
-                                    <img class="profile-image" src="../assets/6699392491598811070-128.png" height="40"
+                                    <img class="profile-image" src="/assets/6699392491598811070-128.png" height="40"
                                         width="40" alt="Portrait of a Woman" loading="lazy" />
                                 </a>
                                 <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                                     <li>
-                                        <a class="dropdown-item" href="../pages/myProfile.html">My profile</a>
+                                        <a class="dropdown-item" href="../myProfile.html">My profile</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="../pages/settings.html">Settings</a>
+                                        <a class="dropdown-item" href="../settings.html">Settings</a>
                                     </li>
                                     <hr class="dropdown-divider" />
                                     <li>
-                                        <a class="dropdown-item" href="../pages/index.html">Logout</a>
+                                        <a class="dropdown-item" href="../index.html">Logout</a>
                                     </li>
                                 </ul>
                                 <!--  -->
@@ -126,10 +126,79 @@
                 </div>
             </nav>
             <div class="p-5">
-                <h2>Current Courses page</h2>
+                <h3 class="text-center text-primary">Your Final Term Result</h3>
+                <hr>
+                <h5 class="text-primary fw-bold">Semester # 3</h5>
+                 
+                <div class="p-5 table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Course</th>
+                                <th scope="col">Total Marks</th>
+                                <th scope="col">Obtained Marks</th>
+                                <th scope="col">Percentage </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>DSA</td>
+                                <td>35</td>
+                                <td>15</td>
+                                <td>43% </td>
+                            </tr>
+                            <tr>
+                                <td>OOP</td>
+                                <td>35</td>
+                                <td>25</td>
+                                <td>71% </td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td>Calculus</td>
+                                <td>35</td>
+                                <td>27</td>
+                                <td>77% </td>
+                            </tr>
+                            <tr>
+                                <td>Technical Bussiness Writing</td>
+                                <td>35</td>
+                                <td>31</td>
+                                <td>88% </td>
+                            </tr>
+                            <tr>
+                                <td>Data Base</td>
+                                <td>35</td>
+                                <td>28</td>
+                                <td>80% </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                   
+                </div>
+                <nav>
+                    <ul class="pagination pagination-work">
+                      <li class="page-item ">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item "><a class="page-link" href="/pages/FinalTerm Pages/finalpage1.html">1</a></li>
+                      <li class="page-item " aria-current="page">
+                        <a class="page-link" href="/pages/FinalTerm Pages/finalpage2.html">2</a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="/pages/FinalTerm Pages/finalpage3.html">3</a></li>
+                      <li class="page-item"><a class="page-link" href="/pages/FinalTerm Pages/finalpage4.html">4</a></li>
+                      <li class="page-item"><a class="page-link" href="/pages/FinalTerm Pages/finalpage5.html">5</a></li>
+                      <li class="page-item"><a class="page-link" href="/pages/FinalTerm Pages/finalpage6.html">6</a></li>
+                      <li class="page-item"><a class="page-link" href="/pages/FinalTerm Pages/finalpage7.html">7</a></li>
+                      <li class="page-item"><a class="page-link" href="/pages/FinalTerm Pages/finalpage8.html">8</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" tabindex="+1" aria-disabled="true">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
             </div>
         </div>
     </div>
 </body>
-
 </html>
